@@ -1,0 +1,29 @@
+module dif_encoder(
+		clk,
+		reset_n,
+		datain,
+		dataout
+);
+	input 	clk;
+	input 	reset_n;
+	input 	datain;
+	
+	output 	dataout;
+	
+	reg		temp;
+	
+	always @( posedge clk or negedge reset_n )
+	begin
+		if ( !reset_n )
+		begin
+			temp <= datain;
+		end
+		else
+		begin
+			temp <= dataout;
+		end
+	end
+	
+	assign dataout = datain ^ temp;
+	
+endmodule

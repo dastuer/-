@@ -1,0 +1,41 @@
+Tue Apr 13 23:15:49 CST 2021
+Trace back: invalid command name ""
+    while executing
+"::SourceEdit::HandleDrivers [lindex $sigList 0] $d_or_r"
+    (procedure "_showDFReadersDrivers" line 41)
+    invoked from within
+"_showDFReadersDrivers drivers .main_pane.wave.interior.cs.body.pw.wf 1"
+    ("eval" body line 1)
+    invoked from within
+"eval _showDFReadersDrivers "drivers" $winname $classic $args"
+    (procedure "Wave::ShowDFDrivers" line 2)
+    invoked from within
+"Wave::ShowDFDrivers $top 1"
+    (procedure "Wave::1Up" line 27)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 16 47 362 199 "
+    (command bound to event)
+  <2:F:/Software/ModelSim SE/win64/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ""}
+Thu Apr 22 15:31:32 CST 2021
+Trace back: window name "bb" already exists in parent
+    while executing
+"frame $w "
+    (procedure "MtiFormUtil::makeButtonBox" line 5)
+    invoked from within
+"MtiFormUtil::makeButtonBox $f.bb 2 [list  [list "OK"     "if {\[Wave::ApplyWaveSig $tree\]} {Wave::CancelWaveSig $tree}"]  [list "Cancel" "Wave::Cance..."
+    (procedure "Wave::SigDialog" line 68)
+    invoked from within
+"Wave::SigDialog .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    (procedure "Wave::ItemProp" line 19)
+    invoked from within
+"Wave::ItemProp .main_pane.wave.interior.cs.body.pw.wf.tree"
+    (command bound to event)
+  <2:D:/Program_File/ModelSimSE/win64/tk8.6/bgerror.tcl:106: ::tkerror {window name "bb" already exists in parent}
+  <1:eval:1: ::tk::dialog::error::bgerror {window name "bb" already exists in parent}

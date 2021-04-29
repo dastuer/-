@@ -1,0 +1,66 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusProject/adder
+T_opt
+!s110 1616578816
+V4_<Ci:FCG5hXSWz9UOVJ43
+04 10 4 work adder_test fast 0
+=1-085bd6c8224c-605b08ff-3d8-6e0
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vadder
+Z2 !s110 1616578812
+!i10b 1
+!s100 6<h23X1B^ZgEmYnN51H?e0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IK3VQ57LI2Y64AUN^6=dod3
+R0
+w1616044951
+8D:/ModelSim_Simulation/adder/adder.v
+FD:/ModelSim_Simulation/adder/adder.v
+!i122 2
+L0 1 6
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1616578812.000000
+!s107 D:/ModelSim_Simulation/adder/adder.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim_Simulation/adder/adder.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vadder_test
+R2
+!i10b 1
+!s100 ]ANoE3[>M?L68NRTOj[m01
+R3
+IGlSHEW5zklKQUW<O108Im0
+R0
+w1370844866
+8D:/ModelSim_Simulation/adder/adder_test.v
+FD:/ModelSim_Simulation/adder/adder_test.v
+!i122 3
+L0 3 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ModelSim_Simulation/adder/adder_test.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim_Simulation/adder/adder_test.v|
+!i113 0
+R7
+R1

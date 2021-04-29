@@ -1,0 +1,58 @@
+module LookUpTable( 
+			clk,
+			reset_n,
+			address,
+
+			dataout,
+);
+
+	input            clk;
+	input            reset_n;
+	input  [ 4 : 0 ] address;
+
+	output [ 7 : 0 ] dataout;
+
+	reg    [ 7 : 0 ] LUT     [ 0 : 31 ];
+	
+	always @( posedge clk or negedge reset_n )
+	begin
+		if( !reset_n )
+		begin
+			LUT[ 0 ]  <= ; //用C编程计算出的查找表采样值填在这里
+			LUT[ 1 ]  <= ;
+			LUT[ 2 ]  <= ;
+			LUT[ 3 ]  <= ;
+			LUT[ 4 ]  <= ;
+			LUT[ 5 ]  <= ;
+			LUT[ 6 ]  <= ;
+			LUT[ 7 ]  <= ;
+			LUT[ 8 ]  <= ;
+			LUT[ 9 ]  <= ;
+			LUT[ 10 ] <= ;
+			LUT[ 11 ] <= ;
+			LUT[ 12 ] <= ;
+			LUT[ 13 ] <= ;
+			LUT[ 14 ] <= ;
+			LUT[ 15 ] <= ;
+			LUT[ 16 ] <= ;
+			LUT[ 17 ] <= ;
+			LUT[ 18 ] <= ;
+			LUT[ 19 ] <= ;
+			LUT[ 20 ] <= ;
+			LUT[ 21 ] <= ;
+			LUT[ 22 ] <= ;
+			LUT[ 23 ] <= ;
+			LUT[ 24 ] <= ;
+			LUT[ 25 ] <= ;
+			LUT[ 26 ] <= ;
+			LUT[ 27 ] <= ;
+			LUT[ 28 ] <= ;
+			LUT[ 29 ] <= ;
+			LUT[ 30 ] <= ;
+			LUT[ 31 ] <= ;
+		end
+	end
+	
+	assign dataout = LUT[ address ];
+	
+endmodule

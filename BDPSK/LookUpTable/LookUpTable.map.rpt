@@ -1,0 +1,522 @@
+Analysis & Synthesis report for LookUpTable
+Fri Apr 23 13:45:31 2021
+Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                   ;
++------------------------------------+-------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Apr 23 13:45:31 2021     ;
+; Quartus II 64-Bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; LookUpTable                               ;
+; Top-level Entity Name              ; LookUpTable                               ;
+; Family                             ; Cyclone IV E                              ;
+; Total logic elements               ; 16                                        ;
+;     Total combinational functions  ; 16                                        ;
+;     Dedicated logic registers      ; 0                                         ;
+; Total registers                    ; 0                                         ;
+; Total pins                         ; 15                                        ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                         ;
+; Total PLLs                         ; 0                                         ;
++------------------------------------+-------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; LookUpTable        ; LookUpTable        ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+; LookUpTable.v                    ; yes             ; User Verilog HDL File  ; D:/Quartus2/tongxin/e/BDPSK/LookUpTable/LookUpTable.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 16               ;
+;                                             ;                  ;
+; Total combinational functions               ; 16               ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 11               ;
+;     -- 3 input functions                    ; 4                ;
+;     -- <=2 input functions                  ; 1                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 16               ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 0                ;
+;     -- Dedicated logic registers            ; 0                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 15               ;
+; Maximum fan-out node                        ; address[0]~input ;
+; Maximum fan-out                             ; 13               ;
+; Total fan-out                               ; 81               ;
+; Average fan-out                             ; 1.76             ;
++---------------------------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |LookUpTable               ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |LookUpTable        ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Fri Apr 23 13:45:30 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LookUpTable -c LookUpTable
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Warning (10229): Verilog HDL Expression warning at LookUpTable.v(28): truncated literal to match 8 bits
+Warning (10238): Verilog Module Declaration warning at LookUpTable.v(7): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "LookUpTable"
+Info (12021): Found 1 design units, including 1 entities, in source file lookuptable.v
+    Info (12023): Found entity 1: LookUpTable
+Info (12127): Elaborating entity "LookUpTable" for the top level hierarchy
+Info (10041): Inferred latch for "LUT[31][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[31][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[30][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[29][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[28][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[27][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[26][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[25][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[24][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[23][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[22][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[21][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[20][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[19][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[18][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[17][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[16][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[15][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[14][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[13][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[12][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[11][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[10][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[9][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[8][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[7][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[6][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[5][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[4][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[3][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[2][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[1][7]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][0]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][1]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][2]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][3]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][4]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][5]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][6]" at LookUpTable.v(17)
+Info (10041): Inferred latch for "LUT[0][7]" at LookUpTable.v(17)
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "reset_n"
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4552 megabytes
+    Info: Processing ended: Fri Apr 23 13:45:31 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

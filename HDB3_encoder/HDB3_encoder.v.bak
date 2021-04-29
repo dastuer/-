@@ -1,0 +1,18 @@
+module HDB3_encoder(
+		clk,
+		reset_n,
+		datain,
+				
+		dataout
+);
+
+	input            clk;                        //输入时钟
+	input            reset_n;                    //复位信号
+	input            datain;                     //二进制数据输入
+	
+	output [ 2 : 0 ] dataout;                    //HDB3编码结果输出
+	
+
+	/* 此处实现编码器的功能 */
+	
+endmodule

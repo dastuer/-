@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at polar.v(17): always construct contains both blocking and non-blocking assignments File: D:/QuartusProject/HDB3_encoder/polar.v Line: 17

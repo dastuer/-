@@ -1,0 +1,157 @@
+|BDPSK_encoder
+clk => clk.IN3
+reset_n => reset_n.IN4
+clk_out << SYNTHESIZED_WIRE_5.DB_MAX_OUTPUT_PORT_TYPE
+dataout_PN << SYNTHESIZED_WIRE_4.DB_MAX_OUTPUT_PORT_TYPE
+dataout_dif << SYNTHESIZED_WIRE_0.DB_MAX_OUTPUT_PORT_TYPE
+clk_DA << Controller:b2v_inst.clk_DA
+blank_DA_n << Controller:b2v_inst.blank_DA_n
+sync_DA_n << Controller:b2v_inst.sync_DA_n
+dataout[0] << LookUpTable:b2v_inst4.dataout
+dataout[1] << LookUpTable:b2v_inst4.dataout
+dataout[2] << LookUpTable:b2v_inst4.dataout
+dataout[3] << LookUpTable:b2v_inst4.dataout
+dataout[4] << LookUpTable:b2v_inst4.dataout
+dataout[5] << LookUpTable:b2v_inst4.dataout
+dataout[6] << LookUpTable:b2v_inst4.dataout
+dataout[7] << LookUpTable:b2v_inst4.dataout
+
+
+|BDPSK_encoder|Controller:b2v_inst
+clk => address_data[0].CLK
+clk => address_data[1].CLK
+clk => address_data[2].CLK
+clk => address_data[3].CLK
+clk => address_data[4].CLK
+clk => address_data[5].CLK
+clk => address_data[6].CLK
+clk => datain_1.CLK
+clk => clk_DA.DATAIN
+reset_n => address_data[0].ACLR
+reset_n => address_data[1].ACLR
+reset_n => address_data[2].ACLR
+reset_n => address_data[3].ACLR
+reset_n => address_data[4].ACLR
+reset_n => address_data[5].ACLR
+reset_n => address_data[6].ACLR
+datain => flag_pos.IN1
+datain => datain_1.DATAIN
+datain => flag_neg.IN1
+address[0] <= address_data[0].DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= address_data[1].DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= address_data[2].DB_MAX_OUTPUT_PORT_TYPE
+address[3] <= address_data[3].DB_MAX_OUTPUT_PORT_TYPE
+address[4] <= address_data[4].DB_MAX_OUTPUT_PORT_TYPE
+address[5] <= address_data[5].DB_MAX_OUTPUT_PORT_TYPE
+address[6] <= address_data[6].DB_MAX_OUTPUT_PORT_TYPE
+clk_DA <= clk.DB_MAX_OUTPUT_PORT_TYPE
+blank_DA_n <= <VCC>
+sync_DA_n <= <VCC>
+
+
+|BDPSK_encoder|div_clk:b2v_inst1
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => clk_out~reg0.CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BDPSK_encoder|PN_Seq:b2v_inst3
+clk => c[1].CLK
+clk => c[2].CLK
+clk => c[3].CLK
+clk => c[4].CLK
+clk => c[5].CLK
+clk => c[6].CLK
+clk => c[7].CLK
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+dataout <= c[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BDPSK_encoder|LookUpTable:b2v_inst4
+clk => ~NO_FANOUT~
+reset_n => ~NO_FANOUT~
+address[0] => Mux0.IN6
+address[0] => Mux1.IN6
+address[0] => Mux2.IN6
+address[0] => Mux3.IN6
+address[0] => Mux4.IN6
+address[0] => Mux5.IN6
+address[0] => Mux6.IN6
+address[0] => Mux7.IN6
+address[1] => Mux0.IN5
+address[1] => Mux1.IN5
+address[1] => Mux2.IN5
+address[1] => Mux3.IN5
+address[1] => Mux4.IN5
+address[1] => Mux5.IN5
+address[1] => Mux6.IN5
+address[1] => Mux7.IN5
+address[2] => Mux0.IN4
+address[2] => Mux1.IN4
+address[2] => Mux2.IN4
+address[2] => Mux3.IN4
+address[2] => Mux4.IN4
+address[2] => Mux5.IN4
+address[2] => Mux6.IN4
+address[2] => Mux7.IN4
+address[3] => Mux0.IN3
+address[3] => Mux1.IN3
+address[3] => Mux2.IN3
+address[3] => Mux3.IN3
+address[3] => Mux4.IN3
+address[3] => Mux5.IN3
+address[3] => Mux6.IN3
+address[3] => Mux7.IN3
+address[4] => Mux0.IN2
+address[4] => Mux1.IN2
+address[4] => Mux2.IN2
+address[4] => Mux3.IN2
+address[4] => Mux4.IN2
+address[4] => Mux5.IN2
+address[4] => Mux6.IN2
+address[4] => Mux7.IN2
+address[5] => Mux0.IN1
+address[5] => Mux1.IN1
+address[5] => Mux2.IN1
+address[5] => Mux3.IN1
+address[5] => Mux4.IN1
+address[5] => Mux5.IN1
+address[5] => Mux6.IN1
+address[5] => Mux7.IN1
+address[6] => Mux0.IN0
+address[6] => Mux1.IN0
+address[6] => Mux2.IN0
+address[6] => Mux3.IN0
+address[6] => Mux4.IN0
+address[6] => Mux5.IN0
+address[6] => Mux6.IN0
+address[6] => Mux7.IN0
+dataout[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+dataout[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+dataout[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+dataout[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+dataout[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+dataout[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BDPSK_encoder|dif:b2v_inst5
+clk => dn_1.CLK
+reset_n => dn_1.ALOAD
+datain => dataout.IN1
+datain => dn_1.ADATA
+dataout <= dataout.DB_MAX_OUTPUT_PORT_TYPE
+
+

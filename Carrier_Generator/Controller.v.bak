@@ -1,0 +1,28 @@
+module Controller(
+			clk,
+			reset_n,
+				
+			address,
+			clk_DA,
+			blank_DA_n,
+			sync_DA_n
+);
+
+	input            clk         ;
+	input            reset_n     ;
+	
+	output [ 4 : 0 ] address     ;
+	output           clk_DA      ; //数模转换器控制信号
+	output           blank_DA_n  ; //数模转换器控制信号
+	output           sync_DA_n   ; //数模转换器控制信号
+	
+	reg    [ 4 : 0 ] address_data;
+
+	/* 此处实现控制器的功能 */
+	
+	assign address    = address_data;
+	assign clk_DA     = clk;
+	assign blank_DA_n = 1'b1;
+	assign sync_DA_n  = 1'b1;
+	
+endmodule

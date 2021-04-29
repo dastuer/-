@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 29 15:09:22 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : BDPSK
+Top-level Entity Name : BDPSK
+Family : Cyclone IV E
+Total logic elements : 84
+    Total combinational functions : 78
+    Dedicated logic registers : 41
+Total registers : 41
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

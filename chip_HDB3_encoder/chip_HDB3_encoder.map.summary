@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 29 15:27:40 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : chip_HDB3_encoder
+Top-level Entity Name : chip_HDB3_encoder
+Family : Cyclone IV E
+Total logic elements : 505
+    Total combinational functions : 350
+    Dedicated logic registers : 356
+Total registers : 356
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 640
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

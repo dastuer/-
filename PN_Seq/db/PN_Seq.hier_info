@@ -1,0 +1,18 @@
+|PN_Seq
+clk => c[1].CLK
+clk => c[2].CLK
+clk => c[3].CLK
+clk => c[4].CLK
+clk => c[5].CLK
+clk => c[6].CLK
+clk => c[7].CLK
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+reset_n => c.OUTPUTSELECT
+dataout <= c[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

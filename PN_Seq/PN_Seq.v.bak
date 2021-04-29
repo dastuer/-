@@ -1,0 +1,36 @@
+module PN_Seq(
+		clk,
+		reset_n,	
+		dataout
+);
+
+	input clk;
+	input reset_n;
+	output reg dataout;
+	reg    c[ 7 : 1 ] ; 
+	reg feedback;
+	always@(posedge clk )
+	begin
+		if(!reset_n)
+		c[1] <= 1'b0;
+		c[2] <= 1'b0;
+		c[3] <= 1'b0;
+		c[4] <= 1'b0;
+		c[5] <= 1'b0;
+		c[6] <= 1'b0;
+		c[7] <= 1'b0;
+	end
+	always @(posedge clk) begin
+		feedback <= c[7]^c[4]^c[2]^c[3];
+		c[1] <= feedback;
+		c[2] <= c[1];
+		c[3] <= c[2];
+		c[4] <= c[3];
+		c[5] <= c[4];
+		c[6] <= c[5];
+		c[7] <= c[6];
+		dataout <= c[7];		
+	end
+	
+	
+endmodule

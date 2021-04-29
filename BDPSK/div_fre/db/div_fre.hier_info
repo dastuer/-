@@ -1,0 +1,15 @@
+|div_fre
+clk => clk_o~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk_o <= clk_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

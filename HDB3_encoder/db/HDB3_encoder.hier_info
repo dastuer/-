@@ -1,0 +1,68 @@
+|HDB3_encoder
+clk => clk.IN3
+reset_n => reset_n.IN3
+datain << datain.DB_MAX_OUTPUT_PORT_TYPE
+dataout_v[0] << dataout_v[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout_v[1] << dataout_v[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout_b[0] << dataout_b[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout_b[1] << dataout_b[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout[0] << polar:b2v_inst2.codeout
+dataout[1] << polar:b2v_inst2.codeout
+dataout[2] << polar:b2v_inst2.codeout
+
+
+|HDB3_encoder|add_v:b2v_inst
+reset_n => data_addV[0].ACLR
+reset_n => data_addV[1].ACLR
+reset_n => count0[0].ACLR
+reset_n => count0[1].ACLR
+clk => data_addV[0].CLK
+clk => data_addV[1].CLK
+clk => count0[0].CLK
+clk => count0[1].CLK
+datain => data_addV.DATAA
+datain => addV_en.IN1
+datain => count0.OUTPUTSELECT
+datain => count0.OUTPUTSELECT
+dataout_v[0] <= data_addV[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout_v[1] <= data_addV[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HDB3_encoder|add_b:b2v_inst1
+datain_v[0] => d[0][0].DATAIN
+datain_v[1] => d[0][1].DATAIN
+clk => first_v.CLK
+clk => count_even.CLK
+clk => d[0][0].CLK
+clk => d[0][1].CLK
+clk => d[1][0].CLK
+clk => d[1][1].CLK
+clk => d[2][0].CLK
+clk => d[2][1].CLK
+clk => d[3][0].CLK
+clk => d[3][1].CLK
+reset_n => first_v.PRESET
+reset_n => count_even.PRESET
+dataout_b[0] <= dataout_b.DB_MAX_OUTPUT_PORT_TYPE
+dataout_b[1] <= dataout_b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HDB3_encoder|polar:b2v_inst2
+clk => polared[0].CLK
+clk => polared[1].CLK
+clk => polared[2].CLK
+clk => polar.CLK
+reset_n => polar.ACLR
+datain_b[0] => polared[0].DATAIN
+datain_b[0] => Equal0.IN0
+datain_b[0] => Equal1.IN1
+datain_b[0] => Equal2.IN1
+datain_b[1] => polared[1].DATAIN
+datain_b[1] => Equal0.IN1
+datain_b[1] => Equal1.IN0
+datain_b[1] => Equal2.IN0
+codeout[0] <= polared[0].DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= polared[1].DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= polared[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

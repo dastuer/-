@@ -1,0 +1,24 @@
+|Controller
+clk => address_data[0].CLK
+clk => address_data[1].CLK
+clk => address_data[2].CLK
+clk => address_data[3].CLK
+clk => address_data[4].CLK
+clk => clk_DA.DATAIN
+reset_n => address_data[0].ACLR
+reset_n => address_data[1].ACLR
+reset_n => address_data[2].ACLR
+reset_n => address_data[3].ACLR
+reset_n => address_data[4].ACLR
+re => ~NO_FANOUT~
+clk_o => ~NO_FANOUT~
+address[0] <= address_data[0].DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= address_data[1].DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= address_data[2].DB_MAX_OUTPUT_PORT_TYPE
+address[3] <= address_data[3].DB_MAX_OUTPUT_PORT_TYPE
+address[4] <= address_data[4].DB_MAX_OUTPUT_PORT_TYPE
+clk_DA <= clk.DB_MAX_OUTPUT_PORT_TYPE
+blank_DA_n <= <VCC>
+sync_DA_n <= <VCC>
+
+

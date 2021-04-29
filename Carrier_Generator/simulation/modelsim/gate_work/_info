@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/QuartusProject/Carrier_Generator/simulation/modelsim
+T_opt
+!s110 1618329621
+VZC<04z:MXh6LVi3DZY]U?1
+04 22 4 work Carrier_Generator_test fast 0
+=1-00d861770423-6075c014-3c2-108
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L cycloneive_ver -L gate_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vCarrier_Generator
+Z2 !s110 1618329620
+!i10b 1
+!s100 F=CD[9i1Kj[aQfVmig8]V2
+!s11b iBh5EaA7;ofg0n0UC6F_b2
+IEo0NIlYcQTXF`2`PR8`4B3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1618329163
+8Carrier_Generator.vo
+FCarrier_Generator.vo
+L0 31
+Z4 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z5 !s108 1618329620.000000
+!s107 Carrier_Generator.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Carrier_Generator.vo|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@carrier_@generator
+vCarrier_Generator_test
+R2
+!i10b 1
+!s100 :k5GZ=`NdK9m4MUzaaeGQ0
+!s11b AE_cSBzIgd?J1=WAQf3NR2
+ICP5;;B<A2bh:7:6=9i_^a1
+R3
+R0
+w1618326862
+8G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v
+FG:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/QuartusProject/Carrier_Generator|G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+G:/QuartusProject/Carrier_Generator -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@carrier_@generator_test

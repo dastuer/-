@@ -1,0 +1,152 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusProject/HDB3_encoder/simulation/modelsim
+T_opt
+!s110 1619080506
+V@MBhjYa7jMcM48I`KAWOk3
+Z1 04 17 4 work HDB3_encoder_test fast 0
+=1-085bd6c8224c-6081353a-122-101c
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1619677369
+V4jPV=Si<Jf=Fje3O1K1Ol1
+R1
+=1-085bd6c8224c-608a50b9-1b4-b70
+R2
+R3
+n@_opt1
+R4
+vadd_b
+Z5 !s110 1619677368
+!i10b 1
+!s100 @j5Kk_E7OHYmbYT;[zTPh1
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IT2Cm_HdLhPVaK^_Uk<CX21
+R0
+w1619674180
+8D:/QuartusProject/HDB3_encoder/add_b.v
+FD:/QuartusProject/HDB3_encoder/add_b.v
+!i122 2
+Z7 L0 1 45
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z10 !s108 1619677368.000000
+!s107 D:/QuartusProject/HDB3_encoder/add_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/HDB3_encoder|D:/QuartusProject/HDB3_encoder/add_b.v|
+!i113 0
+Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -vlog01compat -work work +incdir+D:/QuartusProject/HDB3_encoder -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vadd_v
+R5
+!i10b 1
+!s100 O[?91Jgz877Qh6MCfLAO02
+R6
+IkP>mg^K7bJD6aQQh^F9h41
+R0
+w1619080232
+8D:/QuartusProject/HDB3_encoder/add_v.v
+FD:/QuartusProject/HDB3_encoder/add_v.v
+!i122 1
+R7
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/QuartusProject/HDB3_encoder/add_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/HDB3_encoder|D:/QuartusProject/HDB3_encoder/add_v.v|
+!i113 0
+R11
+R12
+R3
+vHDB3_encoder
+R5
+!i10b 1
+!s100 Q02Y0G>OI3JcEP51cPaN?2
+R6
+I3:NbDQJGBi7a?=K`d=A>M1
+R0
+w1619677266
+8D:/QuartusProject/HDB3_encoder/HDB3_encoder.v
+FD:/QuartusProject/HDB3_encoder/HDB3_encoder.v
+!i122 0
+L0 1 43
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/QuartusProject/HDB3_encoder/HDB3_encoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/HDB3_encoder|D:/QuartusProject/HDB3_encoder/HDB3_encoder.v|
+!i113 0
+R11
+R12
+R3
+n@h@d@b3_encoder
+vHDB3_encoder_test
+R5
+!i10b 1
+!s100 _me0hn6;E?8l7RmmXMkFV2
+R6
+IBn[m5Be`<AMH8H:e6X4[B3
+R0
+w1619677299
+8D:/QuartusProject/HDB3_encoder/HDB3_encoder_test.v
+FD:/QuartusProject/HDB3_encoder/HDB3_encoder_test.v
+!i122 4
+L0 2 58
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/QuartusProject/HDB3_encoder/HDB3_encoder_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/HDB3_encoder|D:/QuartusProject/HDB3_encoder/HDB3_encoder_test.v|
+!i113 0
+R11
+R12
+R3
+n@h@d@b3_encoder_test
+vpolar
+R5
+!i10b 1
+!s100 8:6TNi24<U:>7;CI@=28T3
+R6
+ID;:e_9H]I3?6M?^B3K[A<1
+R0
+w1618997865
+8D:/QuartusProject/HDB3_encoder/polar.v
+FD:/QuartusProject/HDB3_encoder/polar.v
+!i122 3
+L0 1 36
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/QuartusProject/HDB3_encoder/polar.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/HDB3_encoder|D:/QuartusProject/HDB3_encoder/polar.v|
+!i113 0
+R11
+R12
+R3

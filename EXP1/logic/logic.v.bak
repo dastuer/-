@@ -1,0 +1,9 @@
+module logic(a,b,c,d,f,g);
+input a,b;
+output c,d,f,g;
+assign c = ~a;
+assign d = a&&!b;
+assign f = a||b;
+assign g = a^b;
+endmodule
+

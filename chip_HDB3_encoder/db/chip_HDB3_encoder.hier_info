@@ -1,0 +1,94 @@
+|chip_HDB3_encoder
+dataout[0] <= HDB3_encoder:inst.dataout[0]
+dataout[1] <= HDB3_encoder:inst.dataout[1]
+dataout[2] <= HDB3_encoder:inst.dataout[2]
+clk => HDB3_encoder:inst.clk
+reset_n => HDB3_encoder:inst.reset_n
+
+
+|chip_HDB3_encoder|HDB3_encoder:inst
+clk => clk.IN4
+reset_n => reset_n.IN4
+dataout[0] <= sign_HDB3:SIGN_HDB3.dataout
+dataout[1] <= sign_HDB3:SIGN_HDB3.dataout
+dataout[2] <= sign_HDB3:SIGN_HDB3.dataout
+
+
+|chip_HDB3_encoder|HDB3_encoder:inst|all_zero:ALL_ZERO
+clk => ~NO_FANOUT~
+reset_n => ~NO_FANOUT~
+datain <= <GND>
+
+
+|chip_HDB3_encoder|HDB3_encoder:inst|addV:ADDV
+clk => data_addV[0]~reg0.CLK
+clk => data_addV[1]~reg0.CLK
+clk => count_zero[0].CLK
+clk => count_zero[1].CLK
+reset_n => data_addV[0]~reg0.ACLR
+reset_n => data_addV[1]~reg0.ACLR
+reset_n => count_zero[0].ACLR
+reset_n => count_zero[1].ACLR
+datain => data_addV.DATAA
+datain => addV_en.IN1
+datain => count_zero.OUTPUTSELECT
+datain => count_zero.OUTPUTSELECT
+data_addV[0] <= data_addV[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_addV[1] <= data_addV[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|chip_HDB3_encoder|HDB3_encoder:inst|addB:ADDB
+clk => data_addB[0]~reg0.CLK
+clk => data_addB[1]~reg0.CLK
+clk => firstV_occur.CLK
+clk => count_nonzero.CLK
+clk => reg_data[2][0].CLK
+clk => reg_data[2][1].CLK
+clk => reg_data[1][0].CLK
+clk => reg_data[1][1].CLK
+clk => reg_data[0][0].CLK
+clk => reg_data[0][1].CLK
+reset_n => reg_data[2][0].ACLR
+reset_n => reg_data[2][1].ACLR
+reset_n => reg_data[1][0].ACLR
+reset_n => reg_data[1][1].ACLR
+reset_n => reg_data[0][0].ACLR
+reset_n => reg_data[0][1].ACLR
+reset_n => firstV_occur.ACLR
+reset_n => count_nonzero.ACLR
+reset_n => data_addB[0]~reg0.ENA
+reset_n => data_addB[1]~reg0.ENA
+data_addV[0] => reg_data[2][0].DATAIN
+data_addV[0] => Equal0.IN1
+data_addV[0] => Equal1.IN0
+data_addV[1] => reg_data[2][1].DATAIN
+data_addV[1] => Equal0.IN0
+data_addV[1] => Equal1.IN1
+data_addB[0] <= data_addB[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_addB[1] <= data_addB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|chip_HDB3_encoder|HDB3_encoder:inst|sign_HDB3:SIGN_HDB3
+clk => delay_data_addB[0].CLK
+clk => delay_data_addB[1].CLK
+clk => sign_HDB3.CLK
+clk => flag.CLK
+reset_n => delay_data_addB[0].ALOAD
+reset_n => delay_data_addB[1].ALOAD
+reset_n => sign_HDB3.ACLR
+reset_n => flag.ACLR
+data_addB[0] => delay_data_addB[0].DATAIN
+data_addB[0] => delay_data_addB[0].ADATA
+data_addB[0] => Equal0.IN0
+data_addB[0] => Equal1.IN1
+data_addB[0] => Equal2.IN1
+data_addB[1] => delay_data_addB[1].DATAIN
+data_addB[1] => delay_data_addB[1].ADATA
+data_addB[1] => Equal0.IN1
+data_addB[1] => Equal1.IN0
+data_addB[1] => Equal2.IN0
+dataout[0] <= delay_data_addB[0].DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= delay_data_addB[1].DB_MAX_OUTPUT_PORT_TYPE
+dataout[2] <= sign_HDB3.DB_MAX_OUTPUT_PORT_TYPE
+
+

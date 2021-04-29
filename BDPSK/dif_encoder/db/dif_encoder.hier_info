@@ -1,0 +1,7 @@
+|dif_encoder
+clk_o => temp.CLK
+reset_n => temp.PRESET
+data_PN => temp.ENA
+re <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+

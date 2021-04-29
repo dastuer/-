@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/QuartusProject/Carrier_Generator
+T_opt
+!s110 1618325689
+V28S@AFcGYadWilCgT99Vf3
+04 22 4 work Carrier_Generator_test fast 0
+=1-00d861770423-6075b0b8-3b9-2570
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+R0
+vCarrier_Generator
+Z2 !s110 1618326067
+!i10b 1
+!s100 eXn?;fT@@_dK]0O_>L8611
+!s11b 6U03Hh2Snd5CJHC>7i[o32
+IdD=F`3nNin54Uio:S@=]:0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1618320315
+8G:/QuartusProject/Carrier_Generator/Carrier_Generator.v
+FG:/QuartusProject/Carrier_Generator/Carrier_Generator.v
+L0 1
+Z4 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z5 !s108 1618326067.000000
+!s107 G:/QuartusProject/Carrier_Generator/Carrier_Generator.v|
+!s90 -reportprogress|300|-work|work|G:/QuartusProject/Carrier_Generator/Carrier_Generator.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@carrier_@generator
+vCarrier_Generator_test
+R2
+!i10b 1
+!s100 4ZcGLH5?j=Rd2;NNDl2Ul2
+!s11b @S>g1>>W=DK:8g>5i8P8C1
+I7:27K:AJR963?f>F_4nJM0
+R3
+R0
+w1618326053
+8G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v
+FG:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v|
+!s90 -reportprogress|300|-work|work|G:/QuartusProject/Carrier_Generator/Carrier_Generator_test.v|
+!i113 0
+R6
+R1
+n@carrier_@generator_test
+vController
+R2
+!i10b 1
+!s100 E:8OKEPFEPlCW8c3WOI1J0
+!s11b ei?6==Wl7G^aIzf1fEZ];1
+Ij8AboRb@`UO[O:[fCzjoZ1
+R3
+R0
+w1618324538
+8G:/QuartusProject/Carrier_Generator/Controller.v
+FG:/QuartusProject/Carrier_Generator/Controller.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/QuartusProject/Carrier_Generator/Controller.v|
+!s90 -reportprogress|300|-work|work|G:/QuartusProject/Carrier_Generator/Controller.v|
+!i113 0
+R6
+R1
+n@controller
+vLookUpTable
+R2
+!i10b 1
+!s100 0Mh8:5b0EJQjM[TDMEBfk1
+!s11b 4OWA`4ic_Be^S6Vk4H=JQ0
+IBDPlU<@XAkH;AYBg1DXbi0
+R3
+R0
+w1618324914
+8G:/QuartusProject/Carrier_Generator/LookUpTable.v
+FG:/QuartusProject/Carrier_Generator/LookUpTable.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/QuartusProject/Carrier_Generator/LookUpTable.v|
+!s90 -reportprogress|300|-work|work|G:/QuartusProject/Carrier_Generator/LookUpTable.v|
+!i113 0
+R6
+R1
+n@look@up@table
