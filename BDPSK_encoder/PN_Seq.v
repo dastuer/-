@@ -7,13 +7,19 @@ module PN_Seq(
 	input clk;
 	input reset_n;
 	output dataout;
-	reg    [7:1]c ; 
+	reg    c[7:1] ; 
 	
 	always @(posedge clk) 
 	begin
 		if(!reset_n)
 			begin
-			c <= 7'd0;
+			c[1] <= 7'd1;
+			c[2] <= 7'd0;
+			c[3] <= 7'd0;
+			c[4] <= 7'd1;
+			c[5] <= 7'd0;
+			c[6] <= 7'd0;
+			c[7] <= 7'd1;
 			end
 		else
 			begin

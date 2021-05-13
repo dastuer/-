@@ -23,7 +23,7 @@ module Controller(
 	always@(posedge clk or negedge reset_n)
 	begin
 	  if(!reset_n)
-	  address_data <= 5'd8;
+	  address_data <= 5'd0;
 	  else if(address_data < 5'd31)
 	  begin
 		address_data <= address_data + 5'd1;

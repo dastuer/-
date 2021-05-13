@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Carrier_Generator
-Thu Apr 22 16:18:23 2021
+Wed May 12 22:58:52 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -151,7 +151,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.544 ; 0.000              ;
+; clk   ; 0.535 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -185,15 +185,15 @@ No paths to report.
 ; -0.839 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.756      ;
 ; -0.820 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.737      ;
 ; -0.754 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.671      ;
-; -0.731 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.648      ;
+; -0.722 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.639      ;
 ; -0.714 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.631      ;
 ; -0.527 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.888      ;
+; -0.484 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.845      ;
 ; -0.442 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.803      ;
-; -0.337 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.698      ;
-; -0.333 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.694      ;
-; -0.331 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.099     ; 1.230      ;
-; -0.309 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.226      ;
-; -0.270 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.187      ;
+; -0.320 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.363      ; 1.681      ;
+; -0.318 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.099     ; 1.217      ;
+; -0.306 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.223      ;
+; -0.253 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.170      ;
 ; -0.243 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.160      ;
 ; -0.217 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.081     ; 1.134      ;
 +--------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -204,19 +204,19 @@ No paths to report.
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.544 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.273      ;
-; 0.583 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.312      ;
+; 0.535 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.264      ;
+; 0.565 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.294      ;
 ; 0.639 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.368      ;
 ; 0.653 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.543      ; 1.382      ;
 ; 0.658 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.925      ;
-; 0.674 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.941      ;
+; 0.665 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.932      ;
 ; 0.676 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.943      ;
-; 0.694 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.099      ; 0.979      ;
-; 0.716 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.983      ;
+; 0.686 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.099      ; 0.971      ;
+; 0.709 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 0.976      ;
 ; 0.975 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.242      ;
 ; 0.984 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.251      ;
 ; 0.989 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.256      ;
-; 1.001 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.268      ;
+; 0.992 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.259      ;
 ; 1.096 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.363      ;
 ; 1.110 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.377      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -270,15 +270,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 5.883 ; 5.874 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 8.846 ; 8.689 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 8.846 ; 8.689 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 8.606 ; 8.611 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 8.489 ; 8.608 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 8.573 ; 8.675 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 8.218 ; 8.094 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 8.193 ; 8.323 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 8.500 ; 8.509 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 8.486 ; 8.633 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 8.859 ; 8.831 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 8.859 ; 8.700 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 8.562 ; 8.619 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 8.775 ; 8.831 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 8.489 ; 8.591 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 8.378 ; 8.242 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 8.397 ; 8.526 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 8.437 ; 8.479 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 8.148 ; 8.295 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 5.883 ; 5.874 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -289,15 +289,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 5.704 ; 5.698 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 6.867 ; 6.968 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 7.726 ; 7.615 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 7.419 ; 7.548 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 7.829 ; 7.874 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 7.039 ; 7.157 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 7.563 ; 7.451 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 7.431 ; 7.538 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 6.867 ; 6.968 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 7.766 ; 7.784 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 6.789 ; 6.886 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 7.720 ; 7.606 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 7.573 ; 7.701 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 7.715 ; 7.756 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 7.033 ; 7.151 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 7.606 ; 7.500 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 7.447 ; 7.554 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 6.789 ; 6.886 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 7.569 ; 7.738 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 5.704 ; 5.698 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -332,7 +332,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.489 ; 0.000             ;
+; clk   ; 0.480 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -366,15 +366,15 @@ No paths to report.
 ; -0.648 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.575      ;
 ; -0.619 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.546      ;
 ; -0.574 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.501      ;
-; -0.563 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.490      ;
+; -0.554 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.481      ;
 ; -0.547 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.474      ;
 ; -0.354 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.691      ;
+; -0.320 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.657      ;
 ; -0.280 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.617      ;
-; -0.194 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.531      ;
-; -0.192 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.088     ; 1.103      ;
-; -0.190 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.527      ;
-; -0.172 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.099      ;
-; -0.139 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.066      ;
+; -0.182 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.088     ; 1.093      ;
+; -0.181 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.108      ;
+; -0.173 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.338      ; 1.510      ;
+; -0.122 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.049      ;
 ; -0.113 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.040      ;
 ; -0.097 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.072     ; 1.024      ;
 +--------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -385,19 +385,19 @@ No paths to report.
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.489 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.158      ;
-; 0.517 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.186      ;
+; 0.480 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.149      ;
+; 0.513 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.182      ;
 ; 0.574 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.243      ;
 ; 0.584 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.498      ; 1.253      ;
 ; 0.603 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.846      ;
-; 0.616 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.859      ;
+; 0.607 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.850      ;
 ; 0.620 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.863      ;
-; 0.633 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.088      ; 0.892      ;
-; 0.654 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.897      ;
+; 0.626 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.088      ; 0.885      ;
+; 0.653 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.896      ;
 ; 0.889 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.132      ;
 ; 0.890 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.133      ;
+; 0.895 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.138      ;
 ; 0.900 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.143      ;
-; 0.904 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.147      ;
 ; 0.989 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.232      ;
 ; 0.999 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.072      ; 1.242      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -451,15 +451,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 5.283 ; 5.382 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 8.009 ; 7.833 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 8.009 ; 7.833 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 7.722 ; 7.773 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 7.622 ; 7.780 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 7.693 ; 7.805 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 7.406 ; 7.259 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 7.347 ; 7.497 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 7.640 ; 7.681 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 7.653 ; 7.782 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 8.020 ; 8.025 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 8.020 ; 7.844 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 7.677 ; 7.762 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 7.878 ; 8.025 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 7.612 ; 7.724 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 7.548 ; 7.392 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 7.558 ; 7.703 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 7.584 ; 7.651 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 7.346 ; 7.474 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 5.283 ; 5.382 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -470,15 +470,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 5.106 ; 5.203 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 6.156 ; 6.267 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 6.991 ; 6.841 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 6.655 ; 6.799 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 7.008 ; 7.124 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 6.085 ; 6.189 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 6.983 ; 6.831 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 6.804 ; 6.948 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 6.906 ; 7.020 ; Rise       ; clk             ;
 ;  dataout[3] ; clk        ; 6.312 ; 6.441 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 6.828 ; 6.690 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 6.688 ; 6.811 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 6.156 ; 6.267 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 6.957 ; 7.016 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 6.871 ; 6.745 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 6.701 ; 6.827 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 6.085 ; 6.189 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 6.804 ; 6.971 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 5.106 ; 5.203 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -503,7 +503,7 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.258 ; 0.000             ;
+; clk   ; 0.251 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -537,15 +537,15 @@ No paths to report.
 ; 0.109 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.836      ;
 ; 0.119 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.826      ;
 ; 0.157 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.788      ;
-; 0.176 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.769      ;
+; 0.183 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.762      ;
 ; 0.187 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.758      ;
 ; 0.247 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.904      ;
+; 0.272 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.879      ;
 ; 0.295 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.856      ;
-; 0.343 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.594      ;
-; 0.349 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.802      ;
-; 0.359 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.586      ;
-; 0.359 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.792      ;
-; 0.378 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.567      ;
+; 0.351 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; -0.050     ; 0.586      ;
+; 0.358 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.587      ;
+; 0.358 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 1.000        ; 0.164      ; 0.793      ;
+; 0.387 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.558      ;
 ; 0.392 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.553      ;
 ; 0.402 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 1.000        ; -0.042     ; 0.543      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -556,19 +556,19 @@ No paths to report.
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.258 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.598      ;
-; 0.277 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.617      ;
+; 0.251 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.591      ;
+; 0.267 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.607      ;
 ; 0.301 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.427      ;
 ; 0.302 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.642      ;
+; 0.304 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.430      ;
 ; 0.309 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[0] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.435      ;
-; 0.311 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.437      ;
 ; 0.313 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.256      ; 0.653      ;
-; 0.322 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.050      ; 0.456      ;
+; 0.316 ; Controller:CONTROLLER|address_data[4] ; Controller:CONTROLLER|address_data[4] ; clk          ; clk         ; 0.000        ; 0.050      ; 0.450      ;
 ; 0.332 ; Controller:CONTROLLER|address_data[3] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.458      ;
 ; 0.450 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.576      ;
 ; 0.458 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[1] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.584      ;
 ; 0.461 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[2] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.587      ;
-; 0.469 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.595      ;
+; 0.462 ; Controller:CONTROLLER|address_data[2] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.588      ;
 ; 0.513 ; Controller:CONTROLLER|address_data[1] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.639      ;
 ; 0.524 ; Controller:CONTROLLER|address_data[0] ; Controller:CONTROLLER|address_data[3] ; clk          ; clk         ; 0.000        ; 0.042      ; 0.650      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -622,15 +622,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 3.238 ; 3.468 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 4.574 ; 4.597 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 4.574 ; 4.597 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 4.567 ; 4.471 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 4.536 ; 4.489 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 4.549 ; 4.520 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 4.305 ; 4.331 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 4.382 ; 4.362 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 4.476 ; 4.391 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 4.498 ; 4.498 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 4.672 ; 4.605 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 4.583 ; 4.591 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 4.543 ; 4.472 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 4.672 ; 4.605 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 4.500 ; 4.471 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 4.379 ; 4.405 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 4.488 ; 4.468 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 4.441 ; 4.380 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 4.318 ; 4.333 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 3.238 ; 3.468 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -641,15 +641,15 @@ No paths to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 3.142 ; 3.379 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 3.680 ; 3.657 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 4.020 ; 4.062 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 3.968 ; 3.922 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 4.211 ; 4.094 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 3.776 ; 3.745 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 3.949 ; 3.982 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 3.970 ; 3.943 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 3.680 ; 3.657 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 4.150 ; 4.056 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 3.641 ; 3.621 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 4.022 ; 4.063 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 4.029 ; 3.983 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 4.151 ; 4.040 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 3.778 ; 3.747 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 3.965 ; 3.998 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 3.977 ; 3.951 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 3.641 ; 3.621 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 4.044 ; 4.039 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 3.142 ; 3.379 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -665,8 +665,8 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -0.846 ; 0.258 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -0.846 ; 0.258 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack ; -0.846 ; 0.251 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -0.846 ; 0.251 ; N/A      ; N/A     ; -3.000              ;
 ; Design-wide TNS  ; -3.169 ; 0.0   ; 0.0      ; 0.0     ; -9.425              ;
 ;  clk             ; -3.169 ; 0.000 ; N/A      ; N/A     ; -9.425              ;
 +------------------+--------+-------+----------+---------+---------------------+
@@ -678,15 +678,15 @@ No synchronizer chains to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 5.883 ; 5.874 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 8.846 ; 8.689 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 8.846 ; 8.689 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 8.606 ; 8.611 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 8.489 ; 8.608 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 8.573 ; 8.675 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 8.218 ; 8.094 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 8.193 ; 8.323 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 8.500 ; 8.509 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 8.486 ; 8.633 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 8.859 ; 8.831 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 8.859 ; 8.700 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 8.562 ; 8.619 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 8.775 ; 8.831 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 8.489 ; 8.591 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 8.378 ; 8.242 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 8.397 ; 8.526 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 8.437 ; 8.479 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 8.148 ; 8.295 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 5.883 ; 5.874 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -697,15 +697,15 @@ No synchronizer chains to report.
 ; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------+------------+-------+-------+------------+-----------------+
 ; clk_DA      ; clk        ; 3.142 ; 3.379 ; Rise       ; clk             ;
-; dataout[*]  ; clk        ; 3.680 ; 3.657 ; Rise       ; clk             ;
-;  dataout[0] ; clk        ; 4.020 ; 4.062 ; Rise       ; clk             ;
-;  dataout[1] ; clk        ; 3.968 ; 3.922 ; Rise       ; clk             ;
-;  dataout[2] ; clk        ; 4.211 ; 4.094 ; Rise       ; clk             ;
-;  dataout[3] ; clk        ; 3.776 ; 3.745 ; Rise       ; clk             ;
-;  dataout[4] ; clk        ; 3.949 ; 3.982 ; Rise       ; clk             ;
-;  dataout[5] ; clk        ; 3.970 ; 3.943 ; Rise       ; clk             ;
-;  dataout[6] ; clk        ; 3.680 ; 3.657 ; Rise       ; clk             ;
-;  dataout[7] ; clk        ; 4.150 ; 4.056 ; Rise       ; clk             ;
+; dataout[*]  ; clk        ; 3.641 ; 3.621 ; Rise       ; clk             ;
+;  dataout[0] ; clk        ; 4.022 ; 4.063 ; Rise       ; clk             ;
+;  dataout[1] ; clk        ; 4.029 ; 3.983 ; Rise       ; clk             ;
+;  dataout[2] ; clk        ; 4.151 ; 4.040 ; Rise       ; clk             ;
+;  dataout[3] ; clk        ; 3.778 ; 3.747 ; Rise       ; clk             ;
+;  dataout[4] ; clk        ; 3.965 ; 3.998 ; Rise       ; clk             ;
+;  dataout[5] ; clk        ; 3.977 ; 3.951 ; Rise       ; clk             ;
+;  dataout[6] ; clk        ; 3.641 ; 3.621 ; Rise       ; clk             ;
+;  dataout[7] ; clk        ; 4.044 ; 4.039 ; Rise       ; clk             ;
 ; clk_DA      ; clk        ; 3.142 ; 3.379 ; Fall       ; clk             ;
 +-------------+------------+-------+-------+------------+-----------------+
 
@@ -859,7 +859,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Apr 22 16:18:19 2021
+    Info: Processing started: Wed May 12 22:58:50 2021
 Info: Command: quartus_sta Carrier_Generator -c Carrier_Generator
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -879,10 +879,10 @@ Info (332146): Worst-case setup slack is -0.846
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -0.846        -3.169 clk 
-Info (332146): Worst-case hold slack is 0.544
+Info (332146): Worst-case hold slack is 0.535
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.544         0.000 clk 
+    Info (332119):     0.535         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -899,10 +899,10 @@ Info (332146): Worst-case setup slack is -0.663
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -0.663        -2.325 clk 
-Info (332146): Worst-case hold slack is 0.489
+Info (332146): Worst-case hold slack is 0.480
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.489         0.000 clk 
+    Info (332119):     0.480         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -915,10 +915,10 @@ Info (332146): Worst-case setup slack is 0.105
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):     0.105         0.000 clk 
-Info (332146): Worst-case hold slack is 0.258
+Info (332146): Worst-case hold slack is 0.251
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.258         0.000 clk 
+    Info (332119):     0.251         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
@@ -930,9 +930,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4747 megabytes
-    Info: Processing ended: Thu Apr 22 16:18:23 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4746 megabytes
+    Info: Processing ended: Wed May 12 22:58:52 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

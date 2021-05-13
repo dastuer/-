@@ -1,22 +1,21 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
+Sim Mode              :  Gate
 Family                :  cycloneive
 Quartus root          :  d:/program_file/quartus13/quartus/bin64/
 Quartus sim root      :  d:/program_file/quartus13/quartus/eda/sim_lib
 Simulation Tool       :  modelsim
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
-Sim Output File       :  
-Sim SDF file          :  
+Sim Output File       :  Carrier_Generator.vo
+Sim SDF file          :  Carrier_Generator__verilog.sdo
 Sim dir               :  simulation\modelsim
 
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim software
 Sourced NativeLink script d:/program_file/quartus13/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File Carrier_Generator_run_msim_rtl_verilog.do already exists - backing up current file as Carrier_Generator_run_msim_rtl_verilog.do.bak10
+Warning: File Carrier_Generator_run_msim_gate_verilog.do already exists - backing up current file as Carrier_Generator_run_msim_gate_verilog.do.bak6
 Info: Spawning ModelSim Simulation software 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BDPSK_encoder
-Thu Apr 29 15:46:43 2021
+Wed May 12 23:41:03 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 29 15:46:43 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed May 12 23:41:03 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BDPSK_encoder                               ;
 ; Top-level Entity Name              ; BDPSK_encoder                               ;
@@ -159,7 +159,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -288,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 29 15:46:25 2021
+    Info: Processing started: Wed May 12 23:40:51 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BDPSK_encoder -c BDPSK_encoder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -312,6 +313,13 @@ Info (12127): Elaborating entity "BDPSK_encoder" for the top level hierarchy
 Info (12128): Elaborating entity "Controller" for hierarchy "Controller:b2v_inst" File: D:/QuartusProject/BDPSK_encoder/BDPSK_encoder.v Line: 61
 Info (12128): Elaborating entity "div_clk" for hierarchy "div_clk:b2v_inst1" File: D:/QuartusProject/BDPSK_encoder/BDPSK_encoder.v Line: 66
 Info (12128): Elaborating entity "PN_Seq" for hierarchy "PN_Seq:b2v_inst3" File: D:/QuartusProject/BDPSK_encoder/BDPSK_encoder.v Line: 72
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(16): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 16
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(17): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 17
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(18): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 18
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(19): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 19
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(20): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 20
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(21): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 21
+Warning (10230): Verilog HDL assignment warning at PN_Seq.v(22): truncated value with size 7 to match size of target (1) File: D:/QuartusProject/BDPSK_encoder/PN_Seq.v Line: 22
 Info (12128): Elaborating entity "LookUpTable" for hierarchy "LookUpTable:b2v_inst4" File: D:/QuartusProject/BDPSK_encoder/BDPSK_encoder.v Line: 79
 Info (10041): Inferred latch for "LUT[127][0]" at LookUpTable.v(17) File: D:/QuartusProject/BDPSK_encoder/LookUpTable.v Line: 17
 Info (10041): Inferred latch for "LUT[127][1]" at LookUpTable.v(17) File: D:/QuartusProject/BDPSK_encoder/LookUpTable.v Line: 17
@@ -1350,10 +1358,10 @@ Info (21057): Implemented 121 device resources after synthesis - the final resou
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 105 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Thu Apr 29 15:46:43 2021
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Wed May 12 23:41:03 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:22
 
 

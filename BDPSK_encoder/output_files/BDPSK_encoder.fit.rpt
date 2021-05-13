@@ -1,5 +1,5 @@
 Fitter report for BDPSK_encoder
-Thu Apr 29 15:47:08 2021
+Wed May 12 23:41:20 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 29 15:47:08 2021       ;
+; Fitter Status                      ; Successful - Wed May 12 23:41:20 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BDPSK_encoder                               ;
 ; Top-level Entity Name              ; BDPSK_encoder                               ;
@@ -248,7 +248,7 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
-; Peak interconnect usage (total/H/V)         ; 1.0% / 1.0% / 1.0%      ;
+; Peak interconnect usage (total/H/V)         ; 1.0% / 1.0% / 1.1%      ;
 ; Maximum fan-out                             ; 33                      ;
 ; Highest non-global fan-out                  ; 33                      ;
 ; Total fan-out                               ; 455                     ;
@@ -355,7 +355,7 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; dataout[6]  ; D11   ; 8        ; 23           ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; dataout[7]  ; D12   ; 8        ; 52           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; dataout_PN  ; P26   ; 6        ; 115          ; 40           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; dataout_dif ; P25   ; 6        ; 115          ; 41           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; dataout_dif ; R22   ; 5        ; 115          ; 36           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; sync_DA_n   ; C10   ; 8        ; 35           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
@@ -378,7 +378,6 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; M22      ; MSEL2                                    ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P22      ; MSEL3                                    ; -                        ; -                       ; Dedicated Programming Pin ;
 ; P26      ; DIFFIO_R24n, INIT_DONE                   ; Use as regular IO        ; dataout_PN              ; Dual Purpose Pin          ;
-; P25      ; DIFFIO_R24p, CRC_ERROR                   ; Use as regular IO        ; dataout_dif             ; Dual Purpose Pin          ;
 ; P28      ; DIFFIO_R23n, nCEO                        ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
 ; C12      ; DIFFIO_T29n, PADD16                      ; Use as regular IO        ; dataout[5]              ; Dual Purpose Pin          ;
 ; D12      ; DIFFIO_T29p, PADD17, DQS5T/CQ5T#,DPCLK10 ; Use as regular IO        ; dataout[7]              ; Dual Purpose Pin          ;
@@ -399,8 +398,8 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; 2        ; 1 / 63 ( 2 % )   ; 2.5V          ; --           ;
 ; 3        ; 1 / 73 ( 1 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 71 ( 0 % )   ; 2.5V          ; --           ;
-; 5        ; 0 / 65 ( 0 % )   ; 2.5V          ; --           ;
-; 6        ; 4 / 58 ( 7 % )   ; 2.5V          ; --           ;
+; 5        ; 1 / 65 ( 2 % )   ; 2.5V          ; --           ;
+; 6        ; 3 / 58 ( 5 % )   ; 2.5V          ; --           ;
 ; 7        ; 0 / 72 ( 0 % )   ; 2.5V          ; --           ;
 ; 8        ; 11 / 71 ( 15 % ) ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
@@ -1019,7 +1018,7 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; P22      ; 343        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P23      ; 341        ; 6        ; ^MSEL1                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P24      ; 339        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; P25      ; 346        ; 6        ; dataout_dif                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P25      ; 346        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P26      ; 345        ; 6        ; dataout_PN                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P27      ; 350        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P28      ; 349        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
@@ -1044,7 +1043,7 @@ The pin-out file can be found in D:/QuartusProject/BDPSK_encoder/output_files/BD
 ; R19      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R20      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; R21      ; 333        ; 5        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; R22      ; 332        ; 5        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; R22      ; 332        ; 5        ; dataout_dif                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R23      ; 331        ; 5        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R24      ; 330        ; 5        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R25      ; 327        ; 5        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1294,7 +1293,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                      ; Location      ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+---------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; clk                       ; PIN_Y2        ; 15      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; div_clk:b2v_inst1|clk_out ; FF_X58_Y1_N13 ; 8       ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; div_clk:b2v_inst1|clk_out ; FF_X58_Y1_N31 ; 8       ; Clock                      ; yes    ; Global Clock         ; GCLK16           ; --                        ;
 ; reset_n                   ; PIN_M23       ; 17      ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
 +---------------------------+---------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
@@ -1305,7 +1304,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                      ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; clk                       ; PIN_Y2        ; 15      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; div_clk:b2v_inst1|clk_out ; FF_X58_Y1_N13 ; 8       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; div_clk:b2v_inst1|clk_out ; FF_X58_Y1_N31 ; 8       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
 +---------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1314,14 +1313,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 78 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 20 / 10,120 ( < 1 % )  ;
-; C4 interconnects      ; 53 / 209,544 ( < 1 % ) ;
-; Direct links          ; 9 / 342,891 ( < 1 % )  ;
+; Block interconnects   ; 75 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 18 / 10,120 ( < 1 % )  ;
+; C4 interconnects      ; 67 / 209,544 ( < 1 % ) ;
+; Direct links          ; 7 / 342,891 ( < 1 % )  ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 86 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 32 / 9,963 ( < 1 % )   ;
-; R4 interconnects      ; 65 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 89 / 119,088 ( < 1 % ) ;
+; R24 interconnects     ; 28 / 9,963 ( < 1 % )   ;
+; R4 interconnects      ; 85 / 289,782 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -1338,14 +1337,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 2                           ;
+; 9                                           ; 1                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 4                           ;
+; 12                                          ; 1                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 3                           ;
+; 15                                          ; 2                           ;
+; 16                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1374,14 +1373,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                            ; 0                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
-; 9                                            ; 1                           ;
+; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 4                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 2                           ;
+; 15                                           ; 2                           ;
+; 16                                           ; 1                           ;
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
@@ -1397,12 +1396,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 2.88) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced Out  (Average = 2.75) ; Number of LABs  (Total = 8) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 3                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 3                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 5                           ;
+; 3                                               ; 0                           ;
 ; 4                                               ; 1                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
@@ -1413,7 +1412,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 5.88) ; Number of LABs  (Total = 8) ;
+; Number of Distinct Inputs  (Average = 5.63) ; Number of LABs  (Total = 8) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 1                           ;
@@ -1421,9 +1420,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                           ; 1                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 1                           ;
-; 6                                           ; 0                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 3                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 0                           ;
 ; 9                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
@@ -1550,8 +1549,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Clock(s)                       ; Destination Clock(s)              ; Delay Added in ns ;
 +---------------------------------------+-----------------------------------+-------------------+
 ; div_clk:b2v_inst1|clk_out,reset_n,I/O ; clk                               ; 13.8              ;
-; I/O                                   ; div_clk:b2v_inst1|clk_out         ; 9.8               ;
-; div_clk:b2v_inst1|clk_out,I/O         ; div_clk:b2v_inst1|clk_out         ; 5.2               ;
+; I/O                                   ; div_clk:b2v_inst1|clk_out         ; 9.3               ;
+; div_clk:b2v_inst1|clk_out,I/O         ; div_clk:b2v_inst1|clk_out         ; 5.1               ;
 ; clk                                   ; clk                               ; 4.1               ;
 ; I/O                                   ; clk                               ; 3.2               ;
 ; reset_n                               ; div_clk:b2v_inst1|clk_out         ; 1.2               ;
@@ -1568,21 +1567,21 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------+-------------------------------------+-------------------+
 ; div_clk:b2v_inst1|clk_out    ; div_clk:b2v_inst1|clk_out           ; 4.079             ;
 ; reset_n                      ; Controller:b2v_inst|address_data[0] ; 3.150             ;
-; dif:b2v_inst5|dn_1~1         ; Controller:b2v_inst|address_data[5] ; 2.238             ;
-; dif:b2v_inst5|dn_1~_emulated ; Controller:b2v_inst|address_data[5] ; 1.860             ;
-; PN_Seq:b2v_inst3|c[7]        ; Controller:b2v_inst|address_data[5] ; 1.860             ;
+; dif:b2v_inst5|dn_1~1         ; Controller:b2v_inst|address_data[5] ; 2.234             ;
+; dif:b2v_inst5|dn_1~_emulated ; Controller:b2v_inst|address_data[5] ; 1.868             ;
+; PN_Seq:b2v_inst3|c[7]        ; Controller:b2v_inst|address_data[5] ; 1.868             ;
 ; div_clk:b2v_inst1|count[5]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
 ; div_clk:b2v_inst1|count[4]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
 ; div_clk:b2v_inst1|count[3]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
 ; div_clk:b2v_inst1|count[2]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
 ; div_clk:b2v_inst1|count[1]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
 ; div_clk:b2v_inst1|count[0]   ; div_clk:b2v_inst1|clk_out           ; 1.397             ;
-; PN_Seq:b2v_inst3|c[1]        ; PN_Seq:b2v_inst3|c[2]               ; 0.913             ;
-; PN_Seq:b2v_inst3|c[2]        ; PN_Seq:b2v_inst3|c[3]               ; 0.913             ;
-; PN_Seq:b2v_inst3|c[3]        ; PN_Seq:b2v_inst3|c[4]               ; 0.913             ;
-; PN_Seq:b2v_inst3|c[6]        ; PN_Seq:b2v_inst3|c[7]               ; 0.909             ;
-; PN_Seq:b2v_inst3|c[4]        ; PN_Seq:b2v_inst3|c[5]               ; 0.787             ;
-; PN_Seq:b2v_inst3|c[5]        ; PN_Seq:b2v_inst3|c[6]               ; 0.787             ;
+; PN_Seq:b2v_inst3|c[1]        ; PN_Seq:b2v_inst3|c[2]               ; 0.903             ;
+; PN_Seq:b2v_inst3|c[2]        ; PN_Seq:b2v_inst3|c[3]               ; 0.903             ;
+; PN_Seq:b2v_inst3|c[3]        ; PN_Seq:b2v_inst3|c[4]               ; 0.870             ;
+; PN_Seq:b2v_inst3|c[6]        ; PN_Seq:b2v_inst3|c[7]               ; 0.868             ;
+; PN_Seq:b2v_inst3|c[4]        ; PN_Seq:b2v_inst3|c[5]               ; 0.778             ;
+; PN_Seq:b2v_inst3|c[5]        ; PN_Seq:b2v_inst3|c[6]               ; 0.778             ;
 +------------------------------+-------------------------------------+-------------------+
 Note: This table only shows the top 17 path(s) that have the largest delay added for hold.
 
@@ -1646,20 +1645,20 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  56 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has 2.5V VCCIO pins. 11 total pin(s) used --  60 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:11
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:07
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y37 to location X115_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.30 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1667,10 +1666,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/QuartusProject/BDPSK_encoder/output_files/BDPSK_encoder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6295 megabytes
-    Info: Processing ended: Thu Apr 29 15:47:08 2021
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 6297 megabytes
+    Info: Processing ended: Wed May 12 23:41:20 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +----------------------------+

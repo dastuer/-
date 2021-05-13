@@ -1,4 +1,4 @@
-<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C120/EP4CE115 (0x020F70DD)" sof_file="">
+<session jtag_chain="Disabled" jtag_device="" sof_file="">
   <display_tree gui_logging_enabled="0">
     <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
   </display_tree>
@@ -76,8 +76,8 @@
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>00000
-            <pwr_up_transitional>00000</pwr_up_transitional>
+          <transitional>11111
+            <pwr_up_transitional>11111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
